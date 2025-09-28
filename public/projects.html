@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Projects - Resilience for Africa's Future</title>
+    <meta name="description" content="Explore our impactful projects across Africa: clean water initiatives, sustainable agriculture programs, conservation efforts, and community development.">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="/css/main.css">
+    <link rel="icon" type="image/svg+xml" href="/assets/images/favicon.svg">
+</head>
+<body>
+    <a href="#main" class="skip-link">Skip to main content</a>
+    
+    <header class="header" role="banner">
+        <nav class="nav container" aria-label="Main navigation">
+            <div class="nav__brand">
+                <a href="/" aria-label="Resilience for Africa's Future - Home">
+                    <img src="/assets/images/logo.svg" alt="Resilience for Africa's Future" width="180" height="60" class="nav__logo">
+                </a>
+            </div>
+            
+            <button class="nav__toggle" aria-expanded="false" aria-controls="nav-menu" aria-label="Toggle navigation menu">
+                <span class="nav__toggle-line"></span>
+                <span class="nav__toggle-line"></span>
+                <span class="nav__toggle-line"></span>
+            </button>
+            
+            <ul class="nav__menu" id="nav-menu" role="menubar">
+                <li class="nav__item" role="none">
+                    <a href="/" class="nav__link" role="menuitem">Home</a>
+                </li>
+                <li class="nav__item" role="none">
+                    <a href="/services" class="nav__link" role="menuitem">Services</a>
+                </li>
+                <li class="nav__item" role="none">
+                    <a href="/projects" class="nav__link nav__link--active" role="menuitem">Projects</a>
+                </li>
+                <li class="nav__item" role="none">
+                    <a href="/about" class="nav__link" role="menuitem">About</a>
+                </li>
+                <li class="nav__item" role="none">
+                    <a href="/blog" class="nav__link" role="menuitem">Blog & Events</a>
+                </li>
+                <li class="nav__item" role="none">
+                    <a href="/contact" class="nav__link" role="menuitem">Contact</a>
+                </li>
+                <li class="nav__item nav__item--cta" role="none">
+                    <a href="#donate" class="btn btn--primary" role="menuitem">Donate</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <main id="main" role="main">
+        <!-- Page Header -->
+        <section class="page-header" aria-labelledby="page-title">
+            <div class="container">
+                <nav aria-label="Breadcrumb" class="breadcrumb">
+                    <ol>
+                        <li><a href="/">Home</a></li>
+                        <li aria-current="page">Projects</li>
+                    </ol>
+                </nav>
+                <h1 id="page-title" class="page-header__title animate-fade-up">Our Projects</h1>
+                <p class="page-header__subtitle animate-fade-up">Transforming communities across Africa through innovative, sustainable projects that address real challenges and create lasting positive change.</p>
+            </div>
+        </section>
+
+        <!-- Project Categories Filter -->
+        <section class="project-filters section-padding-sm">
+            <div class="container">
+                <div class="filter-tabs" role="tablist" aria-label="Project categories">
+                    <button class="filter-tab filter-tab--active" role="tab" aria-selected="true" data-filter="all">All Projects</button>
+                    <button class="filter-tab" role="tab" aria-selected="false" data-filter="water">Water & Sanitation</button>
+                    <button class="filter-tab" role="tab" aria-selected="false" data-filter="agriculture">Agriculture</button>
+                    <button class="filter-tab" role="tab" aria-selected="false" data-filter="conservation">Conservation</button>
+                    <button class="filter-tab" role="tab" aria-selected="false" data-filter="education">Education</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Grid -->
+        <section class="projects-grid section-padding">
+            <div class="container">
+                <div class="projects__grid">
+                    <!-- Kenya Water Project -->
+                    <article id="kenya-water" class="project-card animate-on-scroll" data-category="water">
+                        <div class="project-card__image">
+                            <img src="/assets/images/project-1.jpg" alt="Solar-powered water purification system in rural community" loading="lazy">
+                        </div>
+                        <div class="project-card__content">
+                            <div class="project-card__category">Water & Sanitation</div>
+                            <h3 class="project-card__title">Clean Water Initiative - Kenya</h3>
+                            <p class="project-card__description">Installing solar-powered water purification systems in 25 rural communities across Kenya, providing sustainable access to clean drinking water for over 10,000 residents. This comprehensive project includes community training for system maintenance and water quality monitoring.</p>
+                            <div class="project-card__details">
+                                <div class="detail">
+                                    <span class="detail__label">Location:</span>
+                                    <span class="detail__value">Rural Kenya</span>
+                                </div>
+                                <div class="detail">
+                                    <span class="detail__label">Duration:</span>
+                                    <span class="detail__value">18 months</span>
+                                </div>
+                                <div class="detail">
+                                    <span class="detail__label">Beneficiaries:</span>
+                                    <span class="detail__value">10,000+ people</span>
+                                </div>
+                            </div>
+                            <div class="project-card__progress">
+                                <div class="progress-bar">
+                                    <div class="progress-bar__fill" style="width: 78%"></div>
+                                </div>
+                                <span class="progress-text">78% Complete</span>
+                            </div>
+                            <div class="project-card__actions">
+                                <a href="#project-modal" class="btn btn--secondary" data-project="kenya-water">View Details</a>
+                                <a href="#donate" class="btn btn--outline">Support Project</a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Ghana Farming Project -->
+                    <article id="ghana-farming" class="project-card animate-on-scroll" data-category="agriculture">
+                        <div class="project-card__image">
+                            <img src="/assets/images/project-2.jpg" alt="Women farmers learning sustainable agriculture techniques" loading="lazy">
+                        </div>
+                        <div class="project-card__content">
+                            <div class="project-card__category">Agriculture & Women Empowerment</div>
+                            <h3 class="project-card__title">Sustainable Farming Program - Ghana</h3>
+                            <p class="project-card__description">Empowering 500 women farmers with climate-resilient agricultural techniques, improved seed varieties, and access to microfinance. The program includes training in organic farming, pest management, and market linkages for sustainable livelihoods.</p>
+                            <div class="project-card__details">
+                                <div class="detail">
+                                    <span class="detail__label">Location:</span>
+                                    <span class="detail__value">Northern Ghana</span>
+                                </div>
+                                <div class="detail">
+                                    <span class="detail__label">Duration:</span>
+                                    <span class="detail__value">24 months</span>
+                                </div>
+                                <div class="detail">
+                                    <span class="detail__label">Beneficiaries:</span>
+                                    <span class="detail__value">500 women farmers</span>
+                                </div>
+                            </div>
+                            <div class="project-card__progress">
+                                <div class="progress-bar">
+                                    <div class="progress-bar__fill" style="width: 92%"></div>
+                                </div>
+                                <span class="progress-text">92% Complete</span>
+                            </div>
+                            <div class="project-card__actions">
+                                <a href="#project-modal" class="btn btn--secondary" data-project="ghana-farming">View Details</a>
+                                <a href="#donate" class="btn btn--outline">Support Project</a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Ethiopia Forest Project -->
+                    <article id="ethiopia-forest" class="project-card animate-on-scroll" data-category="conservation">
+                        <div class="project-card__image">
+                            <img src="/assets/images/project-3.jpg" alt="Reforestation efforts with local community participation" loading="lazy">
+                        </div>
+                        <div class="project-card__content">
+                            <div class="project-card__category">Conservation & Climate</div>
+                            <h3 class="project-card__title">Forest Restoration - Ethiopia</h3>
+                            <p class="project-card__description">Community-led reforestation initiative restoring 2,000 hectares of degraded land in the Ethiopian highlands. The project provides economic opportunities through sustainable forestry while enhancing biodiversity and carbon sequestration.</p>
+                            <div class="project-card__details">
+                                <div class="detail">
+                                    <span class="detail__label">Location:</span>
+                                    <span class="detail__value">Ethiopian Highlands</span>
+                                </div>
+                                <div class="detail">
+                                    <span class="detail__label">Duration:</span>
+                                    <span class="detail__value">36 months</span>
+                                </div>
+                                <div class="detail">
+                                    <span class="detail__label">Area:</span>
+                                    <span class="detail__value">2,000 hectares</span>
+                                </div>
+                            </div>
+                            <div class="project-card__progress">
+                                <div class="progress-bar">
+                                    <div class="progress-bar__fill" style="width: 65%"></div>
+                                </div>
+                                <span class="progress-text">65% Complete</span>
+                            </div>
+                            <div class="project-card__actions">
+                                <a href="#project-modal" class="btn btn--secondary" data-project="ethiopia-forest">View Details</a>
+                                <a href="#donate" class="btn btn--outline">Support Project</a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Education Project -->
+                    <article class="project-card animate-on-scroll" data-category="education">
+                        <div class="project-card__image">
+                            <img src="/assets/images/project-4.jpg" alt="Children in newly constructed school classroom" loading="lazy">
+                        </div>
+                        <div class="project-card__content">
+                            <div class="project-card__category">Education & Youth</div>
+                            <h3 class="project-card__title">Digital Learning Centers - Tanzania</h3>
+                            <p class="project-card__description">Establishing solar-powered digital learning centers in remote villages, providing educational resources and digital literacy training for over 1,200 children and young adults. Each center includes computers, tablets, and satellite internet connectivity.</p>
+                            <div class="project-card__details">
+                                <div class="detail">
+                                    <span class="detail__label">Location:</span>
+                                    <span class="detail__value">Rural Tanzania</span>
+                                </div>
+                                <div class="detail">
+                                    <span class="detail__label">Duration:</span>
+                                    <span class="detail__value">12 months</span>
+                                </div>
+                                <div class="detail">
+                                    <span class="detail__label">Beneficiaries:</span>
+                                    <span class="detail__value">1,200+ students</span>
+                                </div>
+                            </div>
+                            <div class="project-card__progress">
+                                <div class="progress-bar">
+                                    <div class="progress-bar__fill" style="width: 45%"></div>
+                                </div>
+                                <span class="progress-text">45% Complete</span>
+                            </div>
+                            <div class="project-card__actions">
+                                <a href="#project-modal" class="btn btn--secondary" data-project="tanzania-education">View Details</a>
+                                <a href="#donate" class="btn btn--outline">Support Project</a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Water Project Uganda -->
+                    <article class="project-card animate-on-scroll" data-category="water">
+                        <div class="project-card__image">
+                            <img src="/assets/images/project-5.jpg" alt="Community members using new water pump system" loading="lazy">
+                        </div>
+                        <div class="project-card__content">
+                            <div class="project-card__category">Water & Sanitation</div>
+                            <h3 class="project-card__title">Borehole Development - Uganda</h3>
+                            <p class="project-card__description">Drilling 15 new boreholes and installing hand pumps in underserved communities across rural Uganda. Each site includes sanitation facilities and hygiene education programs to ensure sustainable water management practices.</p>
+                            <div class="project-card__details">
+                                <div class="detail">
+                                    <span class="detail__label">Location:</span>
+                                    <span class="detail__value">Rural Uganda</span>
+                                </div>
+                                <div class="detail">
+                                    <span class="detail__label">Duration:</span>
+                                    <span class="detail__value">15 months</span>
+                                </div>
+                                <div class="detail">
+                                    <span class="detail__label">Beneficiaries:</span>
+                                    <span class="detail__value">7,500+ people</span>
+                                </div>
+                            </div>
+                            <div class="project-card__progress">
+                                <div class="progress-bar">
+                                    <div class="progress-bar__fill" style="width: 30%"></div>
+                                </div>
+                                <span class="progress-text">30% Complete</span>
+                            </div>
+                            <div class="project-card__actions">
+                                <a href="#project-modal" class="btn btn--secondary" data-project="uganda-water">View Details</a>
+                                <a href="#donate" class="btn btn--outline">Support Project</a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Conservation Project -->
+                    <article class="project-card animate-on-scroll" data-category="conservation">
+                        <div class="project-card__image">
+                            <img src="/assets/images/project-6.jpg" alt="Wildlife monitoring and conservation activities" loading="lazy">
+                        </div>
+                        <div class="project-card__content">
+                            <div class="project-card__category">Conservation & Wildlife</div>
+                            <h3 class="project-card__title">Wildlife Corridor Protection - Botswana</h3>
+                            <p class="project-card__description">Protecting and restoring 50,000 hectares of critical wildlife corridors, enabling safe migration routes for elephants and other species while supporting local communities through eco-tourism and conservation jobs.</p>
+                            <div class="project-card__details">
+                                <div class="detail">
+                                    <span class="detail__label">Location:</span>
+                                    <span class="detail__value">Northern Botswana</span>
+                                </div>
+                                <div class="detail">
+                                    <span class="detail__label">Duration:</span>
+                                    <span class="detail__value">48 months</span>
+                                </div>
+                                <div class="detail">
+                                    <span class="detail__label">Area:</span>
+                                    <span class="detail__value">50,000 hectares</span>
+                                </div>
+                            </div>
+                            <div class="project-card__progress">
+                                <div class="progress-bar">
+                                    <div class="progress-bar__fill" style="width: 85%"></div>
+                                </div>
+                                <span class="progress-text">85% Complete</span>
+                            </div>
+                            <div class="project-card__actions">
+                                <a href="#project-modal" class="btn btn--secondary" data-project="botswana-wildlife">View Details</a>
+                                <a href="#donate" class="btn btn--outline">Support Project</a>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA Section -->
+        <section class="cta section-padding bg-primary">
+            <div class="container text-center">
+                <h2 class="cta__title animate-on-scroll">Help Us Expand Our Impact</h2>
+                <p class="cta__subtitle animate-on-scroll">Your support enables us to launch new projects and reach more communities across Africa. Join us in creating sustainable change.</p>
+                <div class="cta__actions animate-on-scroll">
+                    <a href="#donate" class="btn btn--secondary btn--large">Fund a Project</a>
+                    <a href="/contact" class="btn btn--outline btn--large">Propose a Project</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer" role="contentinfo">
+        <!-- Same footer content as other pages -->
+        <div class="container">
+            <div class="footer__content">
+                <div class="footer__section">
+                    <img src="/assets/images/logo-white.svg" alt="Resilience for Africa's Future" class="footer__logo">
+                    <p class="footer__description">Building resilient communities across Africa through sustainable development, climate action, and community-driven solutions.</p>
+                </div>
+                <div class="footer__section">
+                    <h3 class="footer__heading">Quick Links</h3>
+                    <ul class="footer__links">
+                        <li><a href="/about">About Us</a></li>
+                        <li><a href="/services">Our Services</a></li>
+                        <li><a href="/projects">Current Projects</a></li>
+                        <li><a href="/blog">Latest News</a></li>
+                        <li><a href="/contact">Get in Touch</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Donation Modal (same as other pages) -->
+    <div id="donate" class="modal" role="dialog" aria-labelledby="donate-title" aria-hidden="true">
+        <!-- Same modal content -->
+    </div>
+    
+    <script src="/scripts/main.js"></script>
+</body>
+</html>

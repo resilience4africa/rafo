@@ -1,0 +1,11 @@
+{
+  "projects": {
+    "default": "resilience-for-africa-s-future"
+  },
+  "targets": {},
+  "etags": {
+    "resilience-for-africa-s-future": {
+      "extensionInstances": {}
+    }
+  }
+}

@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Page Not Found - Resilience for Africa's Future</title>
+    <meta name="description" content="The page you were looking for could not be found.">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="/css/main.css">
+    <link rel="icon" type="image/svg+xml" href="/assets/images/favicon.svg">
+    
+    <style>
+        .error-page {
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            padding: var(--space-8);
+        }
+        
+        .error-page__code {
+            font-size: 120px;
+            font-weight: 700;
+            line-height: 1;
+            color: var(--color-primary);
+            font-family: var(--font-heading);
+            margin-bottom: var(--space-4);
+        }
+        
+        .error-page__title {
+            margin-bottom: var(--space-6);
+        }
+        
+        .error-page__text {
+            max-width: 500px;
+            margin: 0 auto var(--space-8);
+            color: var(--color-text-muted);
+        }
+        
+        .error-page__actions {
+            display: flex;
+            gap: var(--space-4);
+        }
+        
+        @media (max-width: 768px) {
+            .error-page__code {
+                font-size: 80px;
+            }
+            
+            .error-page__actions {
+                flex-direction: column;
+            }
+        }
+    </style>
+</head>
+<body>
+    <main class="error-page">
+        <div class="error-page__code">404</div>
+        <h1 class="error-page__title">Page Not Found</h1>
+        <p class="error-page__text">The page you were looking for doesn't exist. You may have mistyped the address or the page may have moved.</p>
+        <div class="error-page__actions">
+            <a href="/" class="btn btn--primary btn--large">Return to Homepage</a>
+            <a href="/contact" class="btn btn--outline btn--large">Contact Support</a>
+        </div>
+    </main>
+    
+    <script>
+        // Report 404 errors to analytics if available
+        if (typeof gtag === 'function') {
+            gtag('event', '404_error', {
+                'event_category': 'error',
+                'event_label': document.referrer + ' -> ' + window.location.href,
+                'non_interaction': true
+            });
+        }
+    </script>
+</body>
+</html>

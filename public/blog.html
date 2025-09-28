@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog & Events - Resilience for Africa's Future</title>
+    <meta name="description" content="Stay updated with our latest news, insights, and upcoming events. Discover stories of impact and community resilience across Africa.">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="/css/main.css">
+    <link rel="icon" type="image/svg+xml" href="/assets/images/favicon.svg">
+</head>
+<body>
+    <a href="#main" class="skip-link">Skip to main content</a>
+    
+    <header class="header" role="banner">
+        <nav class="nav container" aria-label="Main navigation">
+            <div class="nav__brand">
+                <a href="/" aria-label="Resilience for Africa's Future - Home">
+                    <img src="/assets/images/logo.svg" alt="Resilience for Africa's Future" width="180" height="60" class="nav__logo">
+                </a>
+            </div>
+            
+            <button class="nav__toggle" aria-expanded="false" aria-controls="nav-menu" aria-label="Toggle navigation menu">
+                <span class="nav__toggle-line"></span>
+                <span class="nav__toggle-line"></span>
+                <span class="nav__toggle-line"></span>
+            </button>
+            
+            <ul class="nav__menu" id="nav-menu" role="menubar">
+                <li class="nav__item" role="none">
+                    <a href="/" class="nav__link" role="menuitem">Home</a>
+                </li>
+                <li class="nav__item" role="none">
+                    <a href="/services" class="nav__link" role="menuitem">Services</a>
+                </li>
+                <li class="nav__item" role="none">
+                    <a href="/projects" class="nav__link" role="menuitem">Projects</a>
+                </li>
+                <li class="nav__item" role="none">
+                    <a href="/about" class="nav__link" role="menuitem">About</a>
+                </li>
+                <li class="nav__item" role="none">
+                    <a href="/blog" class="nav__link nav__link--active" role="menuitem">Blog & Events</a>
+                </li>
+                <li class="nav__item" role="none">
+                    <a href="/contact" class="nav__link" role="menuitem">Contact</a>
+                </li>
+                <li class="nav__item nav__item--cta" role="none">
+                    <a href="#donate" class="btn btn--primary" role="menuitem">Donate</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <main id="main" role="main">
+        <!-- Page Header -->
+        <section class="page-header" aria-labelledby="page-title">
+            <div class="container">
+                <nav aria-label="Breadcrumb" class="breadcrumb">
+                    <ol>
+                        <li><a href="/">Home</a></li>
+                        <li aria-current="page">Blog & Events</li>
+                    </ol>
+                </nav>
+                <h1 id="page-title" class="page-header__title animate-fade-up">Stories & Updates</h1>
+                <p class="page-header__subtitle animate-fade-up">Discover the latest news, insights, and upcoming events from our work across Africa. Read inspiring stories of community resilience and transformation.</p>
+            </div>
+        </section>
+
+        <!-- Content Tabs -->
+        <section class="content-tabs section-padding-sm">
+            <div class="container">
+                <div class="tab-nav" role="tablist" aria-label="Content categories">
+                    <button class="tab-btn tab-btn--active" role="tab" aria-selected="true" aria-controls="blog-panel" id="blog-tab">Latest News</button>
+                    <button class="tab-btn" role="tab" aria-selected="false" aria-controls="events-panel" id="events-tab">Upcoming Events</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Blog Posts -->
+        <section id="blog-panel" class="blog-posts section-padding" role="tabpanel" aria-labelledby="blog-tab">
+            <div class="container">
+                <div class="blog__grid">
+                    <!-- Featured Post -->
+                    <article class="blog-post blog-post--featured animate-on-scroll">
+                        <div class="blog-post__image">
+                            <img src="/assets/images/blog-1.jpg" alt="Community gathering for climate resilience workshop" loading="lazy">
+                            <span class="blog-post__category">Climate Action</span>
+                        </div>
+                        <div class="blog-post__content">
+                            <time datetime="2024-04-15" class="blog-post__date">April 15, 2024</time>
+                            <h2 class="blog-post__title">Community-Led Climate Adaptation Strategies Show Promising Results</h2>
+                            <div class="blog-post__excerpt">
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. A recent study of our community-based climate adaptation programs reveals significant improvements in resilience to climate shocks. Local knowledge combined with modern techniques has created sustainable solutions that are being adopted across multiple regions.</p>
+                                <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit.</p>
+                            </div>
+                            <div class="blog-post__meta">
+                                <span><strong>Author:</strong> Dr. Sarah Osei</span>
+                                <span><strong>Reading time:</strong> 8 min</span>
+                            </div>
+                            <a href="#" class="blog-post__link">Continue Reading</a>
+                        </div>
+                    </article>
+
+                    <!-- Regular Posts -->
+                    <article class="blog-post animate-on-scroll">
+                        <div class="blog-post__image">
+                            <img src="/assets/images/blog-2.jpg" alt="Women farmers inspecting crops" loading="lazy">
+                            <span class="blog-post__category">Agriculture</span>
+                        </div>
+                        <div class="blog-post__content">
+                            <time datetime="2024-03-28" class="blog-post__date">March 28, 2024</time>
+                            <h2 class="blog-post__title">Drought-Resistant Crop Varieties Boost Food Security in Rural Tanzania</h2>
+                            <div class="blog-post__excerpt">
+                                <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam. Our agricultural innovation program has introduced new drought-resistant crop varieties that have increased yields by 40% even during challenging dry seasons.</p>
+                            </div>
+                            <a href="#" class="blog-post__link">Continue Reading</a>
+                        </div>
+                    </article>
+
+                    <article class="blog-post animate-on-scroll">
+                        <div class="blog-post__image">
+                            <img src="/assets/images/blog-3.jpg" alt="Solar panels being installed on community center" loading="lazy">
+                            <span class="blog-post__category">Clean Energy</span>
+                        </div>
+                        <div class="blog-post__content">
+                            <time datetime="2024-03-12" class="blog-post__date">March 12, 2024</time>
+                            <h2 class="blog-post__title">Solar Energy Initiative Brings Light to 15 Remote Villages</h2>
+                            <div class="blog-post__excerpt">
+                                <p>Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit. Our renewable energy program has successfully installed solar power systems in 15 off-grid communities, providing clean electricity to schools, health clinics, and small businesses.</p>
+                            </div>
+                            <a href="#" class="blog-post__link">Continue Reading</a>
+                        </div>
+                    </article>
+
+                    <article class="blog-post animate-on-scroll">
+                        <div class="blog-post__image">
+                            <img src="/assets/images/blog-4.jpg" alt="Group of children learning in outdoor classroom" loading="lazy">
+                            <span class="blog-post__category">Education</span>
+                        </div>
+                        <div class="blog-post__content">
+                            <time datetime="2024-02-28" class="blog-post__date">February 28, 2024</time>
+                            <h2 class="blog-post__title">Mobile Learning Labs Reach 2,000 Children in Rural Areas</h2>
+                            <div class="blog-post__excerpt">
+                                <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum. Our innovative mobile learning labs have brought educational resources to over 2,000 children in remote communities, focusing on environmental education and sustainable development skills.</p>
+                            </div>
+                            <a href="#" class="blog-post__link">Continue Reading</a>
+                        </div>
+                    </article>
+
+                    <article class="blog-post animate-on-scroll">
+                        <div class="blog-post__image">
+                            <img src="/assets/images/blog-5.jpg" alt="Water purification system installation" loading="lazy">
+                            <span class="blog-post__category">Water & Sanitation</span>
+                        </div>
+                        <div class="blog-post__content">
+                            <time datetime="2024-02-15" class="blog-post__date">February 15, 2024</time>
+                            <h2 class="blog-post__title">New Water Filtration Technology Reduces Waterborne Diseases by 80%</h2>
+                            <div class="blog-post__excerpt">
+                                <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. The implementation of our locally-manufactured ceramic water filters has dramatically reduced instances of waterborne diseases in participating communities.</p>
+                            </div>
+                            <a href="#" class="blog-post__link">Continue Reading</a>
+                        </div>
+                    </article>
+                </div>
+
+                <div class="pagination animate-on-scroll">
+                    <a href="#" class="pagination__link pagination__link--prev" aria-label="Previous page">
+                        <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M19 12H5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M12 19L5 12L12 5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                        Previous
+                    </a>
+                    <div class="pagination__numbers">
+                        <a href="#" class="pagination__number pagination__number--active" aria-current="page">1</a>
+                        <a href="#" class="pagination__number">2</a>
+                        <a href="#" class="pagination__number">3</a>
+                    </div>
+                    <a href="#" class="pagination__link pagination__link--next" aria-label="Next page">
+                        Next
+                        <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M5 12H19" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M12 5L19 12L12 19" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Events -->
+        <section id="events-panel" class="events section-padding" role="tabpanel" aria-labelledby="events-tab" style="display: none;">
+            <div class="container">
+                <div class="events__grid">
+                    <article class="event-card animate-on-scroll">
+                        <div class="event-card__date">
+                            <span class="event-card__month">May</span>
+                            <span class="event-card__day">15</span>
+                        </div>
+                        <div class="event-card__content">
+                            <span class="event-card__category">Conference</span>
+                            <h2 class="event-card__title">African Climate Resilience Summit 2024</h2>
+                            <p class="event-card__description">Join experts from across Africa to discuss innovative approaches to climate adaptation and community resilience. Network with policymakers, researchers, and community leaders.</p>
+                            <div class="event-card__details">
+                                <div class="event-card__detail">
+                                    <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M12 22C17.5228 22 22 17.5228 22 12C22 6.47715 17.5228 2 12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                        <path d="M12 6V12L16 14" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>
+                                    <span>9:00 AM - 5:00 PM</span>
+                                </div>
+                                <div class="event-card__detail">
+                                    <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M21 10C21 17 12 23 12 23C12 23 3 17 3 10C3 7.61305 3.94821 5.32387 5.63604 3.63604C7.32387 1.94821 9.61305 1 12 1C14.3869 1 16.6761 1.94821 18.364 3.63604C20.0518 5.32387 21 7.61305 21 10Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                        <path d="M12 13C13.6569 13 15 11.6569 15 10C15 8.34315 13.6569 7 12 7C10.3431 7 9 8.34315 9 10C9 11.6569 10.3431 13 12 13Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>
+                                    <span>Nairobi Convention Center, Kenya</span>
+                                </div>
+                            </div>
+                            <a href="#" class="btn btn--primary">Register Now</a>
+                        </div>
+                    </article>
+
+                    <article class="event-card animate-on-scroll">
+                        <div class="event-card__date">
+                            <span class="event-card__month">Jun</span>
+                            <span class="event-card__day">08</span>
+                        </div>
+                        <div class="event-card__content">
+                            <span class="event-card__category">Workshop</span>
+                            <h2 class="event-card__title">Sustainable Agriculture Training for Women Farmers</h2>
+                            <p class="event-card__description">Hands-on training for women farmers covering climate-smart agriculture techniques, organic pest management, and market access strategies.</p>
+                            <div class="event-card__details">
+                                <div class="event-card__detail">
+                                    <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M12 22C17.5228 22 22 17.5228 22 12C22 6.47715 17.5228 2 12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                        <path d="M12 6V12L16 14" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>
+                                    <span>10:00 AM - 3:00 PM</span>
+                                </div>
+                                <div class="event-card__detail">
+                                    <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M21 10C21 17 12 23 12 23C12 23 3 17 3 10C3 7.61305 3.94821 5.32387 5.63604 3.63604C7.32387 1.94821 9.61305 1 12 1C14.3869 1 16.6761 1.94821 18.364 3.63604C20.0518 5.32387 21 7.61305 21 10Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                        <path d="M12 13C13.6569 13 15 11.6569 15 10C15 8.34315 13.6569 7 12 7C10.3431 7 9 8.34315 9 10C9 11.6569 10.3431 13 12 13Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>
+                                    <span>Kumasi Agricultural Center, Ghana</span>
+                                </div>
+                            </div>
+                            <a href="#" class="btn btn--primary">Register Now</a>
+                        </div>
+                    </article>
+
+                    <article class="event-card animate-on-scroll">
+                        <div class="event-card__date">
+                            <span class="event-card__month">Jul</span>
+                            <span class="event-card__day">22</span>
+                        </div>
+                        <div class="event-card__content">
+                            <span class="event-card__category">Fundraiser</span>
+                            <h2 class="event-card__title">Annual Gala: Growing Resilience</h2>
+                            <p class="event-card__description">Join us for our annual fundraising gala featuring keynote speakers, success stories from our programs, and opportunities to support our work across Africa.</p>
+                            <div class="event-card__details">
+                                <div class="event-card__detail">
+                                    <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M12 22C17.5228 22 22 17.5228 22 12C22 6.47715 17.5228 2 12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                        <path d="M12 6V12L16 14" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>
+                                    <span>7:00 PM - 10:00 PM</span>
+                                </div>
+                                <div class="event-card__detail">
+                                    <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M21 10C21 17 12 23 12 23C12 23 3 17 3 10C3 7.61305 3.94821 5.32387 5.63604 3.63604C7.32387 1.94821 9.61305 1 12 1C14.3869 1 16.6761 1.94821 18.364 3.63604C20.0518 5.32387 21 7.61305 21 10Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                        <path d="M12 13C13.6569 13 15 11.6569 15 10C15 8.34315 13.6569 7 12 7C10.3431 7 9 8.34315 9 10C9 11.6569 10.3431 13 12 13Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>
+                                    <span>Royal Botanical Gardens, Cape Town</span>
+                                </div>
+                            </div>
+                            <a href="#" class="btn btn--primary">Reserve Tickets</a>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- Newsletter Signup -->
+        <section class="newsletter section-padding bg-light">
+            <div class="container text-center">
+                <h2 class="newsletter__title animate-on-scroll">Stay Connected</h2>
+                <p class="newsletter__subtitle animate-on-scroll">Get the latest updates on our projects, upcoming events, and impact stories delivered to your inbox.</p>
+                
+                <form class="newsletter__form animate-on-scroll" id="newsletter-form">
+                    <div class="newsletter__input-group">
+                        <input type="email" class="newsletter__input" placeholder="Enter your email address" required aria-label="Email address for newsletter">
+                        <button type="submit" class="btn btn--primary">Subscribe</button>
+                    </div>
+                    <p class="newsletter__privacy">We respect your privacy. Unsubscribe at any time.</p>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer" role="contentinfo">
+        <div class="container">
+            <div class="footer__content">
+                <div class="footer__section">
+                    <img src="/assets/images/logo-white.svg" alt="Resilience for Africa's Future" class="footer__logo">
+                    <p class="footer__description">Building resilient communities across Africa through sustainable development, climate action, and community-driven solutions.</p>
+                    <div class="footer__social">
+                        <a href="#" class="footer__social-link" aria-label="Follow us on Facebook">
+                            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
+                        </a>
+                        <a href="#" class="footer__social-link" aria-label="Follow us on Twitter">
+                            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M23.953 4.57a10 10 0 01-2.825.775 4.958 4.958 0 002.163-2.723c-.951.555-2.005.959-3.127 1.184a4.92 4.92 0 00-8.384 4.482C7.69 8.095 4.067 6.13 1.64 3.162a4.822 4.822 0 00-.666 2.475c0 1.71.87 3.213 2.188 4.096a4.904 4.904 0 01-2.228-.616v.06a4.923 4.923 0 003.946 4.827 4.996 4.996 0 01-2.212.085 4.936 4.936 0 004.604 3.417 9.867 9.867 0 01-6.102 2.105c-.39 0-.779-.023-1.17-.067a13.995 13.995 0 007.557 2.209c9.053 0 13.998-7.496 13.998-13.985 0-.21 0-.42-.015-.63A9.935 9.935 0 0024 4.59z"/></svg>
+                        </a>
+                        <a href="#" class="footer__social-link" aria-label="Follow us on LinkedIn">
+                            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="footer__section">
+                    <h3 class="footer__heading">Quick Links</h3>
+                    <ul class="footer__links">
+                        <li><a href="/about">About Us</a></li>
+                        <li><a href="/services">Our Services</a></li>
+                        <li><a href="/projects">Current Projects</a></li>
+                        <li><a href="/blog">Latest News</a></li>
+                        <li><a href="/contact">Get in Touch</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer__section">
+                    <h3 class="footer__heading">Get Involved</h3>
+                    <ul class="footer__links">
+                        <li><a href="#donate">Make a Donation</a></li>
+                        <li><a href="#volunteer">Volunteer</a></li>
+                        <li><a href="#partner">Become a Partner</a></li>
+                        <li><a href="#newsletter">Newsletter</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer__section">
+                    <h3 class="footer__heading">Contact Info</h3>
+                    <div class="footer__contact">
+                        <p>123 Development Street<br>Nairobi, Kenya</p>
+                        <p>Email: info@resilienceafrica.org</p>
+                        <p>Phone: +254 700 123 456</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer__bottom">
+                <div class="footer__copyright">
+                    <p>&copy; 2024 Resilience for Africa's Future. All rights reserved.</p>
+                </div>
+                <div class="footer__legal">
+                    <a href="#privacy">Privacy Policy</a>
+                    <a href="#terms">Terms of Service</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Donation Modal -->
+    <div id="donate" class="modal" role="dialog" aria-labelledby="donate-title" aria-hidden="true">
+        <div class="modal__backdrop" data-close-modal></div>
+        <div class="modal__content">
+            <button class="modal__close" data-close-modal aria-label="Close donation form">
+                <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M18 6L6 18M6 6L18 18" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                </svg>
+            </button>
+            <h2 id="donate-title" class="modal__title">Support Our Mission</h2>
+            <p class="modal__description">Your donation helps us create lasting change in communities across Africa. Every contribution makes a difference.</p>
+            
+            <div class="donation-amounts">
+                <button class="donation-amount" data-amount="25">$25</button>
+                <button class="donation-amount" data-amount="50">$50</button>
+                <button class="donation-amount" data-amount="100">$100</button>
+                <button class="donation-amount" data-amount="250">$250</button>
+            </div>
+            
+            <div class="custom-amount">
+                <label for="custom-donation">Custom Amount ($)</label>
+                <input type="number" id="custom-donation" min="1" placeholder="Enter amount">
+            </div>
+            
+            <div class="modal__actions">
+                <button class="btn btn--primary btn--large" type="button">Proceed to Payment</button>
+                <p class="donation-note">Secure payment processing powered by Stripe. This is a placeholder - integrate with your preferred payment processor.</p>
+            </div>
+        </div>
+    </div>
+    
+    <script src="/scripts/main.js"></script>
+</body>
+</html>

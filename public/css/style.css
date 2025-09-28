@@ -1,0 +1,96 @@
+/* Brand colors */
+:root {
+    /* Brand tokens */
+    --brand-yellow: #ffcf06; /* primary brand accent (warm yellow) */
+    --brand-green:  #1a6302; /* primary brand green (deep) */
+
+    /* Primary (use brand yellow for main CTAs) */
+    --primary-color: var(--brand-yellow);
+    --on-primary-color: var(--brand-green);         /* dark text on yellow buttons/areas */
+    --primary-container-color: #ffe05d;             /* lighter yellow for surfaces */
+    --on-primary-container-color: #8c7203;          /* darker yellow/brown for text */
+
+    /* Secondary (brand green for supporting actions) */
+    --secondary-color: var(--brand-green);
+    --on-secondary-color: #FFFFFF;                   /* white text on dark green */
+    --secondary-container-color: #6a9a5b;            /* softer green surface */
+    --on-secondary-container-color: #072a01;         /* very dark green for text */
+
+    /* Tertiary / neutrals */
+    --tertiary-color: #2f4f3a;                       /* muted green/olive for accents */
+    --on-tertiary-color: #FFFFFF;
+    --tertiary-container-color: #dfeee0;
+    --on-tertiary-container-color: #123015;
+
+    /* Error & system colors (unchanged except minor adjustments allowed) */
+    --error-color: #BA1A1A;
+    --error-container-color: #FFDAD6;
+
+    /* Background / surface */
+    --background-color: #FAFDFA;     /* light, very slightly warm */
+    --on-background-color: #191C1B;  /* very dark text (keeps readability) */
+    --surface-color: #FAFDFA;
+    --on-surface-color: #191C1B;
+    --surface-variant-color: #E8F2E6; /* subtle green-tinged variant */
+    --on-surface-variant-color: #3F4946;
+    --outline-color: #6F7976;
+
+    /* Additional variables */
+    --text-color: #191C1B;
+    --light-text-color: #FAFDFA;
+    --border-radius: 8px;
+    --box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    --transition: all 0.3s ease;
+    --container-width: 1200px;
+    --header-height: 80px;
+    --footer-bg: var(--brand-green);
+
+    /* Convenience */
+    --dark-bg: #191C1B;
+    --light-text: #E0E3E1;
+    --primary-light: #ffe05d;
+    --secondary-light: #6a9a5b;
+}
+
+@media (prefers-color-scheme: dark) {
+    :root {
+        /* In dark mode, use the green as the main highlight (on dark surfaces) */
+        --brand-yellow: #ffcf06;
+        --brand-green:  #1a6302;
+
+        --primary-color: var(--brand-green);         /* green primary in dark mode for stronger contrast */
+        --on-primary-color: #FFFFFF;                 /* white text on green buttons */
+        --primary-container-color: #0f3901;          /* deeper green container */
+        --on-primary-container-color: #ffe05d;       /* yellow text/icons on dark green */
+
+        --secondary-color: #ffe05d;                  /* yellow used as accent in dark mode */
+        --on-secondary-color: #072a01;               /* dark text on yellow containers */
+        --secondary-container-color: #2a4b1a;
+        --on-secondary-container-color: #fffefb;
+
+        --tertiary-color: #9fcf8c;
+        --on-tertiary-color: #072a01;
+        --tertiary-container-color: #133712;
+        --on-tertiary-container-color: #dfeee0;
+
+        --error-color: #FFB4AB;
+        --error-container-color: #93000A;
+
+        --background-color: #191C1B;
+        --on-background-color: #E0E3E1;
+        --surface-color: #191C1B;
+        --on-surface-color: #E0E3E1;
+        --surface-variant-color: #2F392F;
+        --on-surface-variant-color: #BEC9C5;
+        --outline-color: #899390;
+
+        --text-color: #E0E3E1;
+        --light-text-color: #E0E3E1;
+        --footer-bg: #0f3901;
+
+        --dark-bg: #0b0d0b;
+        --light-text: #E0E3E1;
+        --primary-light: #6a9a5b;
+        --secondary-light: #ffe05d;
+    }
+}
