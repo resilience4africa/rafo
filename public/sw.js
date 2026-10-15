@@ -13,7 +13,6 @@ const ASSETS_TO_CACHE = [
   '/scripts/main.js',
   '/assets/images/logo.svg',
   '/assets/images/logo-white.svg',
-  '/assets/images/hero-bg.jpg',
   '/assets/images/favicon.svg'
 ];
 

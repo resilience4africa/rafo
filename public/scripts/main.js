@@ -481,7 +481,7 @@ function initPerformanceOptimizations() {
 	}
 
 	// Preload critical images
-	['/assets/images/hero-bg.jpg', '/assets/images/logo.svg'].forEach(src => {
+	['/assets/images/logo.svg'].forEach(src => {
 		const link = document.createElement('link');
 		link.rel = 'preload';
 		link.as = 'image';

@@ -62,7 +62,7 @@ resilience-for-africa/
 ├── public/                   # Website root
 │   ├── assets/
 │   │   ├── icons/           # Service icons (SVG)
-│   │   └── images/          # Logo, photos, placeholders
+│   │   └── images/          # Logo, favicon (SVG)
 │   ├── css/
 │   │   └── main.css         # All styles (consolidated)
 │   ├── scripts/
@@ -76,8 +76,11 @@ resilience-for-africa/
 │   ├── 404.html             # Error page
 │   └── sw.js                # Service worker
 ├── firebase.json            # Firebase configuration
+├── firestore.indexes.json   # Firestore index configuration
 ├── firestore.rules          # Firestore security rules
 ├── storage.rules            # Storage security rules
+├── .firebaserc              # Firebase project configuration
+├── .gitignore               # Git ignore rules
 └── README.md               # This file
 ```
 
