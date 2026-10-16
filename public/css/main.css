@@ -862,6 +862,76 @@ select:focus {
     flex-wrap: wrap;
 }
 
+/* ===== ABOUT PAGE: GRAPHIC PAGE HEADER ===== */
+.page-header--graphic {
+    position: relative;
+    overflow: hidden;
+}
+
+.page-header--graphic::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image:
+        radial-gradient(circle at 20% 80%, rgba(244, 162, 97, 0.08) 0%, transparent 50%),
+        radial-gradient(circle at 80% 20%, rgba(244, 162, 97, 0.06) 0%, transparent 40%);
+}
+
+.page-header--graphic .container {
+    position: relative;
+    z-index: 1;
+}
+
+/* ===== ABOUT PAGE: TEXT SECTIONS ===== */
+.about-intro__content,
+.why-exists__content,
+.sdg-alignment__content,
+.growing-community__content {
+    max-width: 760px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.about-intro__content p,
+.why-exists__content p,
+.sdg-alignment__content p,
+.growing-community__content p {
+    font-size: var(--text-lg);
+    line-height: 1.7;
+    color: var(--color-text-muted);
+}
+
+.about-intro__content p:first-of-type,
+.why-exists__content p:first-of-type,
+.growing-community__content p:first-of-type {
+    margin-top: var(--space-4);
+}
+
+/* ===== ABOUT PAGE: CORE BELIEF ===== */
+.core-belief__content {
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.core-belief__title {
+    font-size: clamp(var(--text-2xl), 4vw, var(--text-4xl));
+    color: var(--color-white);
+    margin-bottom: var(--space-6);
+    line-height: 1.3;
+    font-weight: 500;
+}
+
+.core-belief__text {
+    font-size: var(--text-lg);
+    color: rgba(255, 255, 255, 0.9);
+    line-height: 1.7;
+    margin-bottom: 0;
+}
+
 /* ===== FOOTER ===== */
 .footer {
     background-color: var(--color-primary-dark);
