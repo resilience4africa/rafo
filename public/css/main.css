@@ -1034,6 +1034,208 @@ select:focus {
     }
 }
 
+/* ===== OUR WORK PAGE ===== */
+.work-section__header {
+    text-align: center;
+    margin-bottom: var(--space-12);
+}
+
+.work-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: var(--space-2);
+    padding: var(--space-2) var(--space-4);
+    border-radius: var(--radius-full);
+    font-size: var(--text-sm);
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    margin-bottom: var(--space-4);
+}
+
+.work-badge--verified {
+    background-color: rgba(34, 139, 34, 0.1);
+    color: #228B22;
+    border: 1px solid rgba(34, 139, 34, 0.3);
+}
+
+.work-badge--developing {
+    background-color: rgba(244, 162, 97, 0.12);
+    color: var(--color-accent-dark, #c97a3e);
+    border: 1px solid rgba(244, 162, 97, 0.35);
+}
+
+/* Verified activity card */
+.activity-card {
+    display: grid;
+    grid-template-columns: 360px 1fr;
+    gap: var(--space-8);
+    background-color: var(--color-white);
+    border-radius: var(--radius-lg);
+    overflow: hidden;
+    box-shadow: var(--shadow-md);
+    border: 1px solid var(--color-border);
+}
+
+.activity-card__image-placeholder {
+    background-color: var(--color-gray-100);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 280px;
+}
+
+.image-placeholder__content {
+    text-align: center;
+    color: var(--color-text-muted);
+}
+
+.image-placeholder__content svg {
+    margin-bottom: var(--space-3);
+    opacity: 0.4;
+}
+
+.image-placeholder__content p {
+    font-size: var(--text-sm);
+    opacity: 0.6;
+}
+
+.activity-card__content {
+    padding: var(--space-8);
+}
+
+.activity-card__title {
+    font-size: var(--text-xl);
+    margin-bottom: var(--space-6);
+}
+
+.activity-card__meta {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: var(--space-4);
+    margin-bottom: var(--space-6);
+    padding-bottom: var(--space-6);
+    border-bottom: 1px solid var(--color-border);
+}
+
+.activity-card__meta-item {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-1);
+}
+
+.activity-card__meta-label {
+    font-size: var(--text-sm);
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    color: var(--color-primary);
+}
+
+.activity-card__meta-value {
+    font-size: var(--text-base);
+    color: var(--color-text);
+}
+
+.activity-card__text {
+    color: var(--color-text-muted);
+    line-height: 1.7;
+    margin-bottom: var(--space-4);
+}
+
+.activity-card__text:last-child {
+    margin-bottom: 0;
+}
+
+/* Initiative cards */
+.initiatives__grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(380px, 1fr));
+    gap: var(--space-8);
+}
+
+.initiative-card {
+    background-color: var(--color-white);
+    border-radius: var(--radius-lg);
+    padding: var(--space-8);
+    box-shadow: var(--shadow-md);
+    border: 1px solid var(--color-border);
+    border-top: 4px solid var(--color-accent);
+    transition: transform var(--transition-base), box-shadow var(--transition-base);
+}
+
+.initiative-card:hover {
+    transform: translateY(-4px);
+    box-shadow: var(--shadow-xl);
+}
+
+.initiative-card__icon {
+    width: 56px;
+    height: 56px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(244, 162, 97, 0.12);
+    border-radius: var(--radius-lg);
+    color: var(--color-accent-dark, #c97a3e);
+    margin-bottom: var(--space-6);
+}
+
+.initiative-card__icon svg {
+    width: 28px;
+    height: 28px;
+}
+
+.initiative-card__title {
+    font-size: var(--text-lg);
+    margin-bottom: var(--space-4);
+}
+
+.initiative-card__text {
+    color: var(--color-text-muted);
+    line-height: 1.7;
+    margin-bottom: var(--space-4);
+}
+
+.initiative-card__text:last-child {
+    margin-bottom: 0;
+}
+
+/* Link with arrow */
+.link-arrow {
+    color: var(--color-primary);
+    font-weight: 500;
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+    gap: var(--space-2);
+    transition: gap var(--transition-fast);
+}
+
+.link-arrow::after {
+    content: '\2192';
+}
+
+.link-arrow:hover {
+    gap: var(--space-3);
+}
+
+@media (max-width: 768px) {
+    .activity-card {
+        grid-template-columns: 1fr;
+    }
+
+    .activity-card__image-placeholder {
+        min-height: 200px;
+    }
+}
+
+@media (max-width: 480px) {
+    .activity-card__meta {
+        grid-template-columns: 1fr;
+    }
+}
+
 /* ===== FOOTER ===== */
 .footer {
     background-color: var(--color-primary-dark);
