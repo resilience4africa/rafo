@@ -932,6 +932,108 @@ select:focus {
     margin-bottom: 0;
 }
 
+/* ===== FOCUS AREA DETAIL SECTIONS ===== */
+.focus-detail__header {
+    display: flex;
+    align-items: center;
+    gap: var(--space-6);
+    margin-bottom: var(--space-8);
+}
+
+.focus-detail__icon {
+    flex-shrink: 0;
+    width: 72px;
+    height: 72px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--color-primary);
+    border-radius: var(--radius-lg);
+    color: var(--color-white);
+}
+
+.focus-detail__icon svg {
+    width: 36px;
+    height: 36px;
+}
+
+.focus-detail__header .section__eyebrow {
+    margin-bottom: var(--space-1);
+}
+
+.focus-detail__header .section__title {
+    margin-bottom: 0;
+}
+
+.focus-detail__body {
+    max-width: 800px;
+}
+
+.focus-detail__intro {
+    font-size: var(--text-lg);
+    line-height: 1.7;
+    color: var(--color-text-muted);
+    margin-bottom: var(--space-8);
+}
+
+.focus-detail__subheading {
+    font-size: var(--text-base);
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    color: var(--color-primary);
+    margin-bottom: var(--space-4);
+}
+
+.focus-detail__list {
+    list-style: none;
+    padding: 0;
+    margin: 0 0 var(--space-8);
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: var(--space-2) var(--space-6);
+}
+
+.focus-detail__list li {
+    position: relative;
+    padding-left: var(--space-6);
+    color: var(--color-text);
+    line-height: 1.6;
+}
+
+.focus-detail__list li::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0.6em;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background-color: var(--color-accent);
+}
+
+.focus-detail__note {
+    font-size: var(--text-lg);
+    line-height: 1.7;
+    color: var(--color-text-muted);
+    font-style: italic;
+    padding-left: var(--space-6);
+    border-left: 3px solid var(--color-accent);
+    margin: 0;
+}
+
+@media (max-width: 640px) {
+    .focus-detail__header {
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+    }
+
+    .focus-detail__list {
+        grid-template-columns: 1fr;
+    }
+}
+
 /* ===== FOOTER ===== */
 .footer {
     background-color: var(--color-primary-dark);
