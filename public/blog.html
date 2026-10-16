@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Blog & Events - Resilience for Africa's Future</title>
-    <meta name="description" content="Stay updated with our latest news, insights, and upcoming events. Discover stories of impact and community resilience across Africa.">
+    <title>News & Insights — Resilience for Africa's Future (RAFO)</title>
+    <meta name="description" content="Ideas, learning and updates from RAFO's work at the intersection of sustainable agriculture, food systems, youth participation, agroforestry and climate resilience.">
     
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -44,7 +44,7 @@
                     <a href="/about" class="nav__link" role="menuitem">About</a>
                 </li>
                 <li class="nav__item" role="none">
-                    <a href="/blog" class="nav__link nav__link--active" role="menuitem">Blog & Events</a>
+                    <a href="/blog" class="nav__link nav__link--active" role="menuitem">News & Insights</a>
                 </li>
                 <li class="nav__item" role="none">
                     <a href="/contact" class="nav__link" role="menuitem">Contact</a>
@@ -58,247 +58,105 @@
 
     <main id="main" role="main">
         <!-- Page Header -->
-        <section class="page-header" aria-labelledby="page-title">
+        <section class="page-header page-header--graphic" aria-labelledby="page-title">
             <div class="container">
                 <nav aria-label="Breadcrumb" class="breadcrumb">
                     <ol>
                         <li><a href="/">Home</a></li>
-                        <li aria-current="page">Blog & Events</li>
+                        <li aria-current="page">News & Insights</li>
                     </ol>
                 </nav>
-                <h1 id="page-title" class="page-header__title animate-fade-up">Stories & Updates</h1>
-                <p class="page-header__subtitle animate-fade-up">Discover the latest news, insights, and upcoming events from our work across Africa. Read inspiring stories of community resilience and transformation.</p>
+                <p class="section__eyebrow section__eyebrow--light animate-fade-up">Based in Ghana · Vision for Africa</p>
+                <h1 id="page-title" class="page-header__title animate-fade-up">News & Insights</h1>
+                <p class="page-header__subtitle animate-fade-up">Ideas, learning and updates from RAFO</p>
             </div>
         </section>
 
-        <!-- Content Tabs -->
-        <section class="content-tabs section-padding-sm">
+        <!-- Intro -->
+        <section class="about-intro section-padding" aria-labelledby="intro-heading">
             <div class="container">
-                <div class="tab-nav" role="tablist" aria-label="Content categories">
-                    <button class="tab-btn tab-btn--active" role="tab" aria-selected="true" aria-controls="blog-panel" id="blog-tab">Latest News</button>
-                    <button class="tab-btn" role="tab" aria-selected="false" aria-controls="events-panel" id="events-tab">Upcoming Events</button>
+                <div class="about-intro__content animate-on-scroll">
+                    <p>RAFO shares perspectives, lessons and updates from our work at the intersection of sustainable agriculture, food systems, youth participation, agroforestry and climate resilience.</p>
+                    <p>As our work grows, this space will document what we are learning, the questions we are exploring and the communities and ideas shaping our journey.</p>
                 </div>
             </div>
         </section>
 
-        <!-- Blog Posts -->
-        <section id="blog-panel" class="blog-posts section-padding" role="tabpanel" aria-labelledby="blog-tab">
+        <!-- Publications -->
+        <section class="news-listing section-padding bg-light" aria-labelledby="publications-heading">
             <div class="container">
-                <div class="blog__grid">
-                    <!-- Featured Post -->
-                    <article class="blog-post blog-post--featured animate-on-scroll">
-                        <div class="blog-post__image">
-                            <img src="/assets/images/blog-1.jpg" alt="Community gathering for climate resilience workshop" loading="lazy">
-                            <span class="blog-post__category">Climate Action</span>
-                        </div>
-                        <div class="blog-post__content">
-                            <time datetime="2024-04-15" class="blog-post__date">April 15, 2024</time>
-                            <h2 class="blog-post__title">Community-Led Climate Adaptation Strategies Show Promising Results</h2>
-                            <div class="blog-post__excerpt">
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. A recent study of our community-based climate adaptation programs reveals significant improvements in resilience to climate shocks. Local knowledge combined with modern techniques has created sustainable solutions that are being adopted across multiple regions.</p>
-                                <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit.</p>
+                <div class="section__header text-center" style="margin-bottom: var(--space-12);">
+                    <h2 id="publications-heading" class="section__title animate-on-scroll">Latest Publications</h2>
+                </div>
+
+                <div class="news-cards">
+                    <!-- Card 1: Insight -->
+                    <article class="news-card animate-on-scroll">
+                        <a href="/insight-youth-food-systems" class="news-card__link">
+                            <div class="news-card__media news-card__media--graphic">
+                                <div class="news-card__graphic">
+                                    <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" width="56" height="56">
+                                        <circle cx="12" cy="8" r="4" stroke="currentColor" stroke-width="1.5"/>
+                                        <path d="M5 21C5 17 8 14 12 14C16 14 19 17 19 21" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+                                    </svg>
+                                </div>
                             </div>
-                            <div class="blog-post__meta">
-                                <span><strong>Author:</strong> Dr. Sarah Osei</span>
-                                <span><strong>Reading time:</strong> 8 min</span>
+                            <div class="news-card__body">
+                                <span class="news-card__category news-card__category--insight">Insight</span>
+                                <h3 class="news-card__title">Why Young People Must Be at the Centre of Africa's Food Systems Transformation</h3>
+                                <p class="news-card__excerpt">RAFO reflects on why youth participation, practical innovation and intergenerational collaboration matter for the future of Africa's food systems.</p>
+                                <span class="news-card__byline">Resilience for Africa's Future (RAFO)</span>
+                                <span class="news-card__cta">Read Insight <span aria-hidden="true">&rarr;</span></span>
                             </div>
-                            <a href="#" class="blog-post__link">Continue Reading</a>
-                        </div>
+                        </a>
                     </article>
 
-                    <!-- Regular Posts -->
-                    <article class="blog-post animate-on-scroll">
-                        <div class="blog-post__image">
-                            <img src="/assets/images/blog-2.jpg" alt="Women farmers inspecting crops" loading="lazy">
-                            <span class="blog-post__category">Agriculture</span>
-                        </div>
-                        <div class="blog-post__content">
-                            <time datetime="2024-03-28" class="blog-post__date">March 28, 2024</time>
-                            <h2 class="blog-post__title">Drought-Resistant Crop Varieties Boost Food Security in Rural Tanzania</h2>
-                            <div class="blog-post__excerpt">
-                                <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam. Our agricultural innovation program has introduced new drought-resistant crop varieties that have increased yields by 40% even during challenging dry seasons.</p>
+                    <!-- Card 2: Field Update -->
+                    <article class="news-card animate-on-scroll">
+                        <a href="/field-update-mampong" class="news-card__link">
+                            <div class="news-card__media news-card__media--placeholder">
+                                <div class="image-placeholder__content">
+                                    <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" width="48" height="48">
+                                        <rect x="3" y="5" width="18" height="14" rx="2" stroke="currentColor" stroke-width="1.5"/>
+                                        <path d="M3 17L8 12L12 15L16 10L21 16" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/>
+                                        <circle cx="8" cy="9" r="1.5" fill="currentColor"/>
+                                    </svg>
+                                    <p>Photograph to be added</p>
+                                </div>
                             </div>
-                            <a href="#" class="blog-post__link">Continue Reading</a>
-                        </div>
-                    </article>
-
-                    <article class="blog-post animate-on-scroll">
-                        <div class="blog-post__image">
-                            <img src="/assets/images/blog-3.jpg" alt="Solar panels being installed on community center" loading="lazy">
-                            <span class="blog-post__category">Clean Energy</span>
-                        </div>
-                        <div class="blog-post__content">
-                            <time datetime="2024-03-12" class="blog-post__date">March 12, 2024</time>
-                            <h2 class="blog-post__title">Solar Energy Initiative Brings Light to 15 Remote Villages</h2>
-                            <div class="blog-post__excerpt">
-                                <p>Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit. Our renewable energy program has successfully installed solar power systems in 15 off-grid communities, providing clean electricity to schools, health clinics, and small businesses.</p>
+                            <div class="news-card__body">
+                                <span class="news-card__category news-card__category--field">Field Update</span>
+                                <h3 class="news-card__title">Building Climate Resilience with Women Small-Scale Farmers in Mampong</h3>
+                                <p class="news-card__excerpt">A look at RAFO's October 2025 community training with approximately 30 women small-scale farmers in Mampong, Ghana.</p>
+                                <span class="news-card__byline">Resilience for Africa's Future (RAFO) &middot; Mampong, Ghana &middot; October 2025</span>
+                                <span class="news-card__cta">Read Field Update <span aria-hidden="true">&rarr;</span></span>
                             </div>
-                            <a href="#" class="blog-post__link">Continue Reading</a>
-                        </div>
-                    </article>
-
-                    <article class="blog-post animate-on-scroll">
-                        <div class="blog-post__image">
-                            <img src="/assets/images/blog-4.jpg" alt="Group of children learning in outdoor classroom" loading="lazy">
-                            <span class="blog-post__category">Education</span>
-                        </div>
-                        <div class="blog-post__content">
-                            <time datetime="2024-02-28" class="blog-post__date">February 28, 2024</time>
-                            <h2 class="blog-post__title">Mobile Learning Labs Reach 2,000 Children in Rural Areas</h2>
-                            <div class="blog-post__excerpt">
-                                <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum. Our innovative mobile learning labs have brought educational resources to over 2,000 children in remote communities, focusing on environmental education and sustainable development skills.</p>
-                            </div>
-                            <a href="#" class="blog-post__link">Continue Reading</a>
-                        </div>
-                    </article>
-
-                    <article class="blog-post animate-on-scroll">
-                        <div class="blog-post__image">
-                            <img src="/assets/images/blog-5.jpg" alt="Water purification system installation" loading="lazy">
-                            <span class="blog-post__category">Water & Sanitation</span>
-                        </div>
-                        <div class="blog-post__content">
-                            <time datetime="2024-02-15" class="blog-post__date">February 15, 2024</time>
-                            <h2 class="blog-post__title">New Water Filtration Technology Reduces Waterborne Diseases by 80%</h2>
-                            <div class="blog-post__excerpt">
-                                <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. The implementation of our locally-manufactured ceramic water filters has dramatically reduced instances of waterborne diseases in participating communities.</p>
-                            </div>
-                            <a href="#" class="blog-post__link">Continue Reading</a>
-                        </div>
+                        </a>
                     </article>
                 </div>
 
-                <div class="pagination animate-on-scroll">
-                    <a href="#" class="pagination__link pagination__link--prev" aria-label="Previous page">
-                        <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M19 12H5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                            <path d="M12 19L5 12L12 5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                        </svg>
-                        Previous
-                    </a>
-                    <div class="pagination__numbers">
-                        <a href="#" class="pagination__number pagination__number--active" aria-current="page">1</a>
-                        <a href="#" class="pagination__number">2</a>
-                        <a href="#" class="pagination__number">3</a>
-                    </div>
-                    <a href="#" class="pagination__link pagination__link--next" aria-label="Next page">
-                        Next
-                        <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M5 12H19" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                            <path d="M12 5L19 12L12 19" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                        </svg>
-                    </a>
+                <!-- Categories note -->
+                <div class="news-categories animate-on-scroll">
+                    <p class="news-categories__label">Categories:</p>
+                    <span class="news-categories__tag news-categories__tag--insight">Insights</span>
+                    <span class="news-categories__tag news-categories__tag--field">Field Updates</span>
+                    <span class="news-categories__tag news-categories__tag--future">News</span>
+                    <span class="news-categories__tag news-categories__tag--future">Events</span>
+                    <p class="news-categories__note">News and Events will appear here as RAFO's work develops.</p>
                 </div>
             </div>
         </section>
 
-        <!-- Events -->
-        <section id="events-panel" class="events section-padding" role="tabpanel" aria-labelledby="events-tab" style="display: none;">
-            <div class="container">
-                <div class="events__grid">
-                    <article class="event-card animate-on-scroll">
-                        <div class="event-card__date">
-                            <span class="event-card__month">May</span>
-                            <span class="event-card__day">15</span>
-                        </div>
-                        <div class="event-card__content">
-                            <span class="event-card__category">Conference</span>
-                            <h2 class="event-card__title">African Climate Resilience Summit 2024</h2>
-                            <p class="event-card__description">Join experts from across Africa to discuss innovative approaches to climate adaptation and community resilience. Network with policymakers, researchers, and community leaders.</p>
-                            <div class="event-card__details">
-                                <div class="event-card__detail">
-                                    <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                        <path d="M12 22C17.5228 22 22 17.5228 22 12C22 6.47715 17.5228 2 12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                                        <path d="M12 6V12L16 14" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                                    </svg>
-                                    <span>9:00 AM - 5:00 PM</span>
-                                </div>
-                                <div class="event-card__detail">
-                                    <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                        <path d="M21 10C21 17 12 23 12 23C12 23 3 17 3 10C3 7.61305 3.94821 5.32387 5.63604 3.63604C7.32387 1.94821 9.61305 1 12 1C14.3869 1 16.6761 1.94821 18.364 3.63604C20.0518 5.32387 21 7.61305 21 10Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                                        <path d="M12 13C13.6569 13 15 11.6569 15 10C15 8.34315 13.6569 7 12 7C10.3431 7 9 8.34315 9 10C9 11.6569 10.3431 13 12 13Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                                    </svg>
-                                    <span>Nairobi Convention Center, Kenya</span>
-                                </div>
-                            </div>
-                            <a href="#" class="btn btn--primary">Register Now</a>
-                        </div>
-                    </article>
-
-                    <article class="event-card animate-on-scroll">
-                        <div class="event-card__date">
-                            <span class="event-card__month">Jun</span>
-                            <span class="event-card__day">08</span>
-                        </div>
-                        <div class="event-card__content">
-                            <span class="event-card__category">Workshop</span>
-                            <h2 class="event-card__title">Sustainable Agriculture Training for Women Farmers</h2>
-                            <p class="event-card__description">Hands-on training for women farmers covering climate-smart agriculture techniques, organic pest management, and market access strategies.</p>
-                            <div class="event-card__details">
-                                <div class="event-card__detail">
-                                    <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                        <path d="M12 22C17.5228 22 22 17.5228 22 12C22 6.47715 17.5228 2 12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                                        <path d="M12 6V12L16 14" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                                    </svg>
-                                    <span>10:00 AM - 3:00 PM</span>
-                                </div>
-                                <div class="event-card__detail">
-                                    <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                        <path d="M21 10C21 17 12 23 12 23C12 23 3 17 3 10C3 7.61305 3.94821 5.32387 5.63604 3.63604C7.32387 1.94821 9.61305 1 12 1C14.3869 1 16.6761 1.94821 18.364 3.63604C20.0518 5.32387 21 7.61305 21 10Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                                        <path d="M12 13C13.6569 13 15 11.6569 15 10C15 8.34315 13.6569 7 12 7C10.3431 7 9 8.34315 9 10C9 11.6569 10.3431 13 12 13Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                                    </svg>
-                                    <span>Kumasi Agricultural Center, Ghana</span>
-                                </div>
-                            </div>
-                            <a href="#" class="btn btn--primary">Register Now</a>
-                        </div>
-                    </article>
-
-                    <article class="event-card animate-on-scroll">
-                        <div class="event-card__date">
-                            <span class="event-card__month">Jul</span>
-                            <span class="event-card__day">22</span>
-                        </div>
-                        <div class="event-card__content">
-                            <span class="event-card__category">Fundraiser</span>
-                            <h2 class="event-card__title">Annual Gala: Growing Resilience</h2>
-                            <p class="event-card__description">Join us for our annual fundraising gala featuring keynote speakers, success stories from our programs, and opportunities to support our work across Africa.</p>
-                            <div class="event-card__details">
-                                <div class="event-card__detail">
-                                    <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                        <path d="M12 22C17.5228 22 22 17.5228 22 12C22 6.47715 17.5228 2 12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                                        <path d="M12 6V12L16 14" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                                    </svg>
-                                    <span>7:00 PM - 10:00 PM</span>
-                                </div>
-                                <div class="event-card__detail">
-                                    <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                        <path d="M21 10C21 17 12 23 12 23C12 23 3 17 3 10C3 7.61305 3.94821 5.32387 5.63604 3.63604C7.32387 1.94821 9.61305 1 12 1C14.3869 1 16.6761 1.94821 18.364 3.63604C20.0518 5.32387 21 7.61305 21 10Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                                        <path d="M12 13C13.6569 13 15 11.6569 15 10C15 8.34315 13.6569 7 12 7C10.3431 7 9 8.34315 9 10C9 11.6569 10.3431 13 12 13Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                                    </svg>
-                                    <span>Royal Botanical Gardens, Cape Town</span>
-                                </div>
-                            </div>
-                            <a href="#" class="btn btn--primary">Reserve Tickets</a>
-                        </div>
-                    </article>
-                </div>
-            </div>
-        </section>
-
-        <!-- Newsletter Signup -->
-        <section class="newsletter section-padding bg-light">
+        <!-- CTA -->
+        <section class="cta section-padding bg-primary" aria-labelledby="news-cta-heading">
             <div class="container text-center">
-                <h2 class="newsletter__title animate-on-scroll">Stay Connected</h2>
-                <p class="newsletter__subtitle animate-on-scroll">Get the latest updates on our projects, upcoming events, and impact stories delivered to your inbox.</p>
-                
-                <form class="newsletter__form animate-on-scroll" id="newsletter-form">
-                    <div class="newsletter__input-group">
-                        <input type="email" class="newsletter__input" placeholder="Enter your email address" required aria-label="Email address for newsletter">
-                        <button type="submit" class="btn btn--primary">Subscribe</button>
-                    </div>
-                    <p class="newsletter__privacy">We respect your privacy. Unsubscribe at any time.</p>
-                </form>
+                <p class="section__eyebrow section__eyebrow--light animate-on-scroll">Get Involved</p>
+                <h2 id="news-cta-heading" class="cta__title animate-on-scroll">Interested in Building Resilience With Us?</h2>
+                <p class="cta__subtitle animate-on-scroll">We welcome conversations with young people, farmers, researchers, public institutions, civil society organisations and responsible private-sector actors interested in strengthening sustainable food systems and climate resilience.</p>
+                <div class="cta__actions animate-on-scroll">
+                    <a href="/contact" class="btn btn--secondary btn--large">Partner With RAFO</a>
+                    <a href="/services" class="btn btn--outline btn--large">Explore Our Focus Areas</a>
+                </div>
             </div>
         </section>
     </main>
@@ -309,7 +167,7 @@
             <div class="footer__content">
                 <div class="footer__section">
                     <img src="/assets/images/logo-white.svg" alt="Resilience for Africa's Future" class="footer__logo">
-                    <p class="footer__description">Building resilient communities across Africa through sustainable development, climate action, and community-driven solutions.</p>
+                    <p class="footer__description">A youth-led organisation based in Accra, Ghana, advancing sustainable agri-food systems, agroforestry, climate-smart agriculture and community-led climate action.</p>
                     <div class="footer__social">
                         <a href="#" class="footer__social-link" aria-label="Follow us on Facebook">
                             <svg viewBox="0 0 24 24" fill="currentColor"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
@@ -329,7 +187,7 @@
                         <li><a href="/about">About Us</a></li>
                         <li><a href="/services">Our Services</a></li>
                         <li><a href="/projects">Current Projects</a></li>
-                        <li><a href="/blog">Latest News</a></li>
+                        <li><a href="/blog">News & Insights</a></li>
                         <li><a href="/contact">Get in Touch</a></li>
                     </ul>
                 </div>
@@ -340,16 +198,13 @@
                         <li><a href="#donate">Make a Donation</a></li>
                         <li><a href="#volunteer">Volunteer</a></li>
                         <li><a href="#partner">Become a Partner</a></li>
-                        <li><a href="#newsletter">Newsletter</a></li>
                     </ul>
                 </div>
                 
                 <div class="footer__section">
                     <h3 class="footer__heading">Contact Info</h3>
                     <div class="footer__contact">
-                        <p>123 Development Street<br>Nairobi, Kenya</p>
-                        <p>Email: info@resilienceafrica.org</p>
-                        <p>Phone: +254 700 123 456</p>
+                        <p>Accra, Ghana</p>
                     </div>
                 </div>
             </div>
