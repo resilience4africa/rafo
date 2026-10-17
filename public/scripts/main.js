@@ -5,7 +5,6 @@ document.addEventListener('DOMContentLoaded', function() {
 	initNavigation();
 	initScrollAnimations();
 	initCounterAnimations();
-	initModal();
 	initProjectFilters();
 	initFormValidation();
 	initSmoothScroll();
@@ -117,61 +116,6 @@ function initCounterAnimations() {
 
 		counters.forEach(counter => counterObserver.observe(counter));
 	}
-}
-
-// ===== MODAL FUNCTIONALITY =====
-function initModal() {
-	const modalTriggers = document.querySelectorAll('[href="#donate"]');
-	const modal = document.getElementById('donate');
-	const modalClose = document.querySelectorAll('[data-close-modal]');
-	const donationAmounts = document.querySelectorAll('.donation-amount');
-	const customAmountInput = document.getElementById('custom-donation');
-	if (!modal) return;
-
-	modalTriggers.forEach(trigger => {
-		trigger.addEventListener('click', function(event) {
-			event.preventDefault();
-			openModal(modal);
-		});
-	});
-
-	modalClose.forEach(closeBtn => {
-		closeBtn.addEventListener('click', function() {
-			closeModal(modal);
-		});
-	});
-
-	donationAmounts.forEach(amount => {
-		amount.addEventListener('click', function() {
-			donationAmounts.forEach(btn => btn.classList.remove('selected'));
-			this.classList.add('selected');
-			if (customAmountInput) customAmountInput.value = '';
-		});
-	});
-
-	if (customAmountInput) {
-		customAmountInput.addEventListener('input', function() {
-			if (this.value) donationAmounts.forEach(btn => btn.classList.remove('selected'));
-		});
-	}
-
-	document.addEventListener('keydown', function(event) {
-		if (event.key === 'Escape' && modal.getAttribute('aria-hidden') === 'false') {
-			closeModal(modal);
-		}
-	});
-}
-
-function openModal(modal) {
-	modal.setAttribute('aria-hidden', 'false');
-	document.body.style.overflow = 'hidden';
-	const firstFocusable = modal.querySelector('button, input, [tabindex]:not([tabindex="-1"])');
-	if (firstFocusable) setTimeout(() => firstFocusable.focus(), 100);
-}
-
-function closeModal(modal) {
-	modal.setAttribute('aria-hidden', 'true');
-	document.body.style.overflow = '';
 }
 
 // ===== PROJECT FILTERS =====
@@ -286,7 +230,7 @@ function initSmoothScroll() {
 		link.addEventListener('click', function(event) {
 			const targetId = this.getAttribute('href');
 			const targetElement = document.querySelector(targetId);
-			if (targetElement && targetId !== '#donate') {
+			if (targetElement) {
 				event.preventDefault();
 				const header = document.querySelector('.header');
 				const headerHeight = header ? header.offsetHeight : 0;
@@ -411,28 +355,6 @@ function initAccessibilityEnhancements() {
 		});
 	});
 
-	document.addEventListener('keydown', function(event) {
-		const activeModal = document.querySelector('.modal[aria-hidden="false"]');
-		if (!activeModal) return;
-		if (event.key === 'Tab') trapFocus(event, activeModal);
-	});
-}
-
-function trapFocus(event, container) {
-	const focusableElements = container.querySelectorAll('button, [href], input, select, textarea, [tabindex]:not([tabindex="-1"])');
-	const firstElement = focusableElements[0];
-	const lastElement = focusableElements[focusableElements.length - 1];
-	if (event.shiftKey) {
-		if (document.activeElement === firstElement) {
-			lastElement.focus();
-			event.preventDefault();
-		}
-	} else {
-		if (document.activeElement === lastElement) {
-			firstElement.focus();
-			event.preventDefault();
-		}
-	}
 }
 
 // ===== PERFORMANCE OPTIMIZATIONS =====
@@ -508,8 +430,6 @@ if ('serviceWorker' in navigator) {
 
 // Export functions (optional)
 window.ResilienceWebsite = {
-	openModal,
-	closeModal,
 	filterProjects,
 	validateForm,
 	showNotification,
