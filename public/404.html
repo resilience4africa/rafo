@@ -66,19 +66,8 @@
         <p class="error-page__text">The page you were looking for doesn't exist. You may have mistyped the address or the page may have moved.</p>
         <div class="error-page__actions">
             <a href="/" class="btn btn--primary btn--large">Return to Homepage</a>
-            <a href="/contact" class="btn btn--outline btn--large">Contact Support</a>
+            <a href="/contact" class="btn btn--outline btn--large">Contact RAFO</a>
         </div>
     </main>
-    
-    <script>
-        // Report 404 errors to analytics if available
-        if (typeof gtag === 'function') {
-            gtag('event', '404_error', {
-                'event_category': 'error',
-                'event_label': document.referrer + ' -> ' + window.location.href,
-                'non_interaction': true
-            });
-        }
-    </script>
 </body>
 </html>
