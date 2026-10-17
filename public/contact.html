@@ -49,9 +49,6 @@
                 <li class="nav__item" role="none">
                     <a href="/contact" class="nav__link nav__link--active" role="menuitem">Contact</a>
                 </li>
-                <li class="nav__item nav__item--cta" role="none">
-                    <a href="#donate" class="btn btn--primary" role="menuitem">Donate</a>
-                </li>
             </ul>
         </nav>
     </header>
@@ -243,9 +240,8 @@
                 <div class="footer__section">
                     <h3 class="footer__heading">Get Involved</h3>
                     <ul class="footer__links">
-                        <li><a href="#donate">Make a Donation</a></li>
-                        <li><a href="#volunteer">Volunteer</a></li>
-                        <li><a href="#partner">Become a Partner</a></li>
+                        <li><a href="/contact">Partner &amp; Collaborate</a></li>
+                        <li><a href="/contact">Support Our Work</a></li>
                     </ul>
                 </div>
                 
@@ -261,46 +257,11 @@
             
             <div class="footer__bottom">
                 <div class="footer__copyright">
-                    <p>&copy; 2024 Resilience for Africa's Future. All rights reserved.</p>
-                </div>
-                <div class="footer__legal">
-                    <a href="#privacy">Privacy Policy</a>
-                    <a href="#terms">Terms of Service</a>
+                    <p>&copy; 2026 Resilience for Africa's Future. All rights reserved.</p>
                 </div>
             </div>
         </div>
     </footer>
-
-    <!-- Donation Modal -->
-    <div id="donate" class="modal" role="dialog" aria-labelledby="donate-title" aria-hidden="true">
-        <div class="modal__backdrop" data-close-modal></div>
-        <div class="modal__content">
-            <button class="modal__close" data-close-modal aria-label="Close donation form">
-                <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M18 6L6 18M6 6L18 18" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
-                </svg>
-            </button>
-            <h2 id="donate-title" class="modal__title">Support Our Mission</h2>
-            <p class="modal__description">Your donation helps us create lasting change in communities across Africa. Every contribution makes a difference.</p>
-            
-            <div class="donation-amounts">
-                <button class="donation-amount" data-amount="25">$25</button>
-                <button class="donation-amount" data-amount="50">$50</button>
-                <button class="donation-amount" data-amount="100">$100</button>
-                <button class="donation-amount" data-amount="250">$250</button>
-            </div>
-            
-            <div class="custom-amount">
-                <label for="custom-donation">Custom Amount ($)</label>
-                <input type="number" id="custom-donation" min="1" placeholder="Enter amount">
-            </div>
-            
-            <div class="modal__actions">
-                <button class="btn btn--primary btn--large" type="button">Proceed to Payment</button>
-                <p class="donation-note">Secure payment processing powered by Stripe. This is a placeholder - integrate with your preferred payment processor.</p>
-            </div>
-        </div>
-    </div>
     
     <script src="/scripts/main.js"></script>
 </body>
