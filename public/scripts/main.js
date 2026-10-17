@@ -213,10 +213,10 @@ function filterProjects(filter, projectCards) {
 // ===== FORM VALIDATION =====
 function initFormValidation() {
 	const forms = document.querySelectorAll('form');
+	if (!forms.length) return;
 	forms.forEach(form => {
 		form.addEventListener('submit', function(event) {
 			event.preventDefault();
-			if (validateForm(form)) showFormSuccess(form);
 		});
 		const inputs = form.querySelectorAll('input, textarea, select');
 		inputs.forEach(input => {
@@ -277,29 +277,6 @@ function clearFieldError(field) {
 	field.setAttribute('aria-invalid', 'false');
 	const existingError = field.parentNode.querySelector('.field-error');
 	if (existingError) existingError.remove();
-}
-
-function showFormSuccess(form) {
-	const successMessage = document.createElement('div');
-	successMessage.className = 'form-success';
-	successMessage.innerHTML = `
-		<div class="success-icon">✓</div>
-		<h3>Thank You!</h3>
-		<p>Your message has been received. We'll get back to you soon.</p>
-		<p><small>Note: Placeholder. Wire up with Firebase Functions or preferred form handler.</small></p>
-	`;
-	form.style.display = 'none';
-	form.parentNode.appendChild(successMessage);
-	setTimeout(() => {
-		form.reset();
-		form.style.display = 'block';
-		successMessage.remove();
-		form.querySelectorAll('.field-error').forEach(e => e.remove());
-		form.querySelectorAll('.error').forEach(input => {
-			input.classList.remove('error');
-			input.setAttribute('aria-invalid', 'false');
-		});
-	}, 5000);
 }
 
 // ===== SMOOTH SCROLL =====
