@@ -1,6 +1,6 @@
 // Service Worker for Resilience for Africa's Future
 
-const CACHE_NAME = 'resilience-africa-v1';
+const CACHE_NAME = 'rafo-site-v2';
 const ASSETS_TO_CACHE = [
   '/',
   '/index.html',
@@ -9,6 +9,8 @@ const ASSETS_TO_CACHE = [
   '/about.html',
   '/blog.html',
   '/contact.html',
+  '/insight-youth-food-systems.html',
+  '/field-update-mampong.html',
   '/css/main.css',
   '/scripts/main.js',
   '/assets/images/logo.svg',
