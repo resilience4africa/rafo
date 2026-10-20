@@ -2130,23 +2130,6 @@ img[loading="lazy"].loaded {
     }
 }
 
-@media (max-width: 768px) {
-    .filter-tabs {
-        justify-content: flex-start;
-        overflow-x: auto;
-        -webkit-overflow-scrolling: touch;
-        padding-bottom: var(--space-2);
-    }
-    
-    .filter-tab {
-        flex-shrink: 0;
-    }
-    
-    .project-card__actions {
-        flex-direction: column;
-    }
-}
-
 
 /* Real RAFO story photography */
 .home-story__figure {
