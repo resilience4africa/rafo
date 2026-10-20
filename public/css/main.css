@@ -1742,30 +1742,6 @@ img[loading="lazy"].loaded {
     margin-bottom: var(--space-6);
 }
 
-/* Timeline */
-.timeline__container {
-    position: relative;
-    max-width: 800px;
-    margin: 0 auto;
-    padding-top: var(--space-10);
-}
-}
-
-@media (max-width: 768px) {
-    
-    .team__grid,
-    .partners__grid {
-        grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
-    }
-}
-
-@media (max-width: 480px) {
-    
-    .team-member__image {
-        height: 220px;
-    }
-}
-
 /* ===== PRINT STYLES ===== */
 @media print {
     .header,
